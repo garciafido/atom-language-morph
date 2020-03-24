@@ -1,0 +1,76 @@
+name: 'Morph'
+scopeName: 'source.morph'
+type: 'tree-sitter'
+parser: 'tree-sitter-morph'
+fileTypes: ['hk', 'morph']
+
+scopes:
+    'program': 'source.morph'
+
+    'comment': 'comment.block'
+
+    'decorator > decorator_identifier': 'variable.other.object.property'
+
+    'function_call > identifier': 'entity.name.function'
+
+    'camel_identifier': 'support.storage.type'
+    'snake_identifier': 'support.storage.type'
+    'pascal_identifier': 'variable.other.object.property'
+    'decorator_identifier': 'entity.name.package'
+
+    'simple_string': 'string.quoted.double'
+    'template_string': 'string.quoted.template'
+    'escape_sequence': 'constant.character.escape'
+    'template_substitution': 'constant.other.rune'
+    'integer': 'constant.numeric.integer'
+    'float': 'constant.numeric.float'
+    'false': 'constant.language.false'
+    'true': 'constant.language.true'
+
+    '":"': 'keyword.operator'
+    '"+"': 'keyword.operator'
+    '"-"': 'keyword.operator'
+    '"*"': 'keyword.operator'
+    '"/"': 'keyword.operator'
+    '"%"': 'keyword.operator'
+    '"=="': 'keyword.operator'
+    '"!="': 'keyword.operator'
+    '">"': 'keyword.operator'
+    '"<"': 'keyword.operator'
+    '">="': 'keyword.operator'
+    '"<="': 'keyword.operator'
+    '"!"': 'keyword.operator'
+    '"|"': 'keyword.operator'
+    '"&"': 'keyword.operator'
+    '"||"': 'keyword.operator'
+    '"&&"': 'keyword.operator'
+
+folds: [
+    {
+        type: 'comment'
+    }
+    {
+        start: {index: 0, type: '{'}
+        end: {index: -1, type: '}'}
+    }
+    {
+        start: {index: 0, type: '['}
+        end: {index: -1, type: ']'}
+    }
+    {
+        start: {index: 0, type: '('}
+        end: {index: -1, type: ')'}
+    }
+]
+
+comments: [
+    {
+        start: '/* '
+        end: ' */'
+    }
+
+    {
+        start: '// '
+    }
+]
+

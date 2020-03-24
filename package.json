@@ -1,0 +1,19 @@
+{
+  "name": "language-morph",
+  "version": "1.0.0",
+  "description": "Morph",
+  "repository": "https://github.com/garciafido/language-morph",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fido García",
+  "license": "MIT",
+  "dependencies": {
+    "tree-sitter-morph": ">=1.0.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {}
+}
