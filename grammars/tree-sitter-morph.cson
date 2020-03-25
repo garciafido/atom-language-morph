@@ -6,8 +6,8 @@ fileTypes: ['morph']
 
 scopes:
 
-     '"function"': 'storage.type.function'
-     '"=>"': 'storage.type.function.arrow'
+     '"function"': 'string.quoted.double'
+     '"=>"': 'string.quoted.double'
 
     'simple_string': 'string.quoted.double'
     'template_string': 'string.quoted.template'
