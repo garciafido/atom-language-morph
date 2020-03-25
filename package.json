@@ -1,6 +1,6 @@
 {
   "name": "language-morph",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "description": "Morph",
   "repository": "https://github.com/garciafido/language-morph",
   "main": "index.js",
