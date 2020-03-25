@@ -18,9 +18,8 @@ scopes:
 
     'newclass > "newclass"': 'support.storage.type'
 
-    'function_definition > "function"': 'storage.type.function'
-    'function_definition > "=>"': 'storage.type.function.arrow'
-    'anonymous_function > "=>"': 'storage.type.function.arrow'
+    '"function"': 'storage.type.function'
+    '"=>"': 'storage.type.function.arrow'
 
     'enum_definition > "enum"': 'keyword.modifier'
 
