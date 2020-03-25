@@ -7,15 +7,14 @@ fileTypes: ['hk', 'morph']
 scopes:
     'program': 'source.morph'
 
-    'class > "class"': 'support.type',
+    'class > "class"': 'support.type'
 
-    'function_definition > "function"': 'support.type',
-    'enum_definition > "enum"': 'support.type',
-    'constant_declaration > "const"': 'support.type',
-    'newclass > "newclass"': 'support.type',
-    'foreach_function > "foreach"': 'support.type',
-    'if_function > "if"': 'support.type',
-
+    'function_definition > "function"': 'support.type'
+    'enum_definition > "enum"': 'support.type'
+    'constant_declaration > "const"': 'support.type'
+    'newclass > "newclass"': 'support.type'
+    'foreach_function > "foreach"': 'support.type'
+    'if_function > "if"': 'support.type'
 
     'comment': 'comment.block'
 
