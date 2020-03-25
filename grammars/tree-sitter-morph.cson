@@ -13,6 +13,7 @@ scopes:
       'import > "import"': 'keyword.control'
 
       '":"': 'keyword.operator'
+      '"!"': 'keyword.operator'
 
       '"+"': 'keyword.operator'
       '"-"': 'keyword.operator'
@@ -28,7 +29,6 @@ scopes:
       '"<"': 'keyword.operator'
       '">="': 'keyword.operator'
       '"<="': 'keyword.operator'
-      '"!"': 'keyword.operator'
 
       '"||"': 'keyword.operator'
       '"&&"': 'keyword.operator'
