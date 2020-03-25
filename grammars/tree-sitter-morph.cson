@@ -5,4 +5,5 @@ parser: 'tree-sitter-morph'
 fileTypes: ['morph']
 
 scopes:
-     'program': 'source.morph'
+    'simple_string': 'string.quoted.double'
+    'template_string': 'string.quoted.template'
