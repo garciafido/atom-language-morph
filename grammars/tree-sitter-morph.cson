@@ -7,6 +7,16 @@ fileTypes: ['hk', 'morph']
 scopes:
     'program': 'source.morph'
 
+    'class > "class"': 'support.type',
+
+    'function_definition > "function"': 'support.type',
+    'enum_definition > "enum"': 'support.type',
+    'constant_declaration > "const"': 'support.type',
+    'newclass > "newclass"': 'support.type',
+    'foreach_function > "foreach"': 'support.type',
+    'if_function > "if"': 'support.type',
+
+
     'comment': 'comment.block'
 
     'decorator > decorator_identifier': 'variable.other.object.property'
@@ -24,8 +34,8 @@ scopes:
     'template_substitution': 'constant.other.rune'
     'integer': 'constant.numeric.integer'
     'float': 'constant.numeric.float'
-    'false': 'constant.language.false'
-    'true': 'constant.language.true'
+    'False': 'constant.language.false'
+    'True': 'constant.language.true'
 
     '":"': 'keyword.operator'
     '"+"': 'keyword.operator'
