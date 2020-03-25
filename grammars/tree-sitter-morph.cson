@@ -3,3 +3,6 @@ scopeName: 'source.morph'
 type: 'tree-sitter'
 parser: 'tree-sitter-morph'
 fileTypes: ['morph']
+
+scopes:
+     'program': 'source.morph'
