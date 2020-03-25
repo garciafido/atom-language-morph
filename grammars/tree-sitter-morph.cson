@@ -32,15 +32,15 @@ scopes:
 
     'function_call > identifier': 'entity.name.function'
 
-    'camel_identifier': 'support.storage.type'
-    'snake_identifier': 'support.storage.type'
-    'pascal_identifier': 'variable.other.object.property'
-    'decorator_identifier': 'entity.name.package'
+    'identifier > camel_identifier': 'variable.other.object.property'
+    'identifier > snake_identifier': 'variable.other.object.property'
+    'identifier > pascal_identifier': 'variable.other.object.property'
 
     'simple_string': 'string.quoted.double'
     'template_string': 'string.quoted.template'
     'escape_sequence': 'constant.character.escape'
     'template_substitution': 'constant.other.rune'
+
     'integer': 'constant.numeric.integer'
     'float': 'constant.numeric.float'
     'False': 'constant.language.false'
