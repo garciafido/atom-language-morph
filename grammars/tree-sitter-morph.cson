@@ -7,4 +7,4 @@ fileTypes: ['morph']
 scopes:
     'simple_string': 'string.quoted.double'
     'template_string': 'string.quoted.template'
-    'function_definition > "function"': 'storage.type.function'
+    'function_definition': 'storage.type.function'
