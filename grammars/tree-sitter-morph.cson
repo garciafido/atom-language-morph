@@ -7,10 +7,11 @@ fileTypes: ['morph']
 scopes:
     'program': 'source.morph'
 
-    'import > "from"': 'storage.type'
-    'import > "import"': 'storage.type'
+    'import > "from"': 'support.storage.type'
+    'import > "import"': 'support.storage.type'
     'import > identifier': 'storage.type'
 
+    'node > "export"': 'storage.type'
     'node > "abstract"': 'storage.type'
     'node > "node"': 'storage.type'
     'node > identifier:nth-child(1)': 'keyword.modifier'
@@ -39,7 +40,7 @@ scopes:
     'function > "function"': 'storage.type'
     'function > identifier:nth-child(1)': 'storage.type'
     'function > identifier:nth-child(2)': 'storage.type'
-    'function > "=>"': 'storage.type'
+    'function > "=>"': 'storage.type.function.arrow'
     'function > ":"': 'storage.type'
 
     'enum > "enum"': 'storage.type'
@@ -49,6 +50,7 @@ scopes:
     'enum > ":"': 'storage.type'
 
     'const > "const"': 'storage.type'
+    'node > "export"': 'storage.type'
     'const > identifier:nth-child(1)': 'storage.type'
     'const > identifier:nth-child(2)': 'storage.type'
     'const > ":"': 'storage.type'
@@ -62,7 +64,9 @@ scopes:
     'morph_mutation > ":"': 'storage.type'
 
     'if_function > "if"': 'storage.type'
-    'if_function > "=>"': 'storage.type'
+    'if_function > "=>"': 'storage.type.function.arrow'
+
+    'comment': 'comment.block'
 
     'simple_string': 'string.quoted'
     'template_string': 'string.quoted.template'
