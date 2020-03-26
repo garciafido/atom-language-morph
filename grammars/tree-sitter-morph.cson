@@ -3,3 +3,8 @@ scopeName: 'source.morph'
 type: 'tree-sitter'
 parser: 'tree-sitter-morph'
 fileTypes: ['morph']
+
+scopes:
+     '"function"': 'storage.type.function'
+     '"=>"': 'storage.type.function.arrow'
+     'comment': 'comment.block'
