@@ -66,6 +66,7 @@ scopes:
 
     'simple_string': 'string.quoted'
     'template_string': 'string.quoted.template'
+    'ebnf_literal': 'string.quoted.template'
     '
     template_substitution > "${",
     template_substitution > "}"
