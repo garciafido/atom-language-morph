@@ -7,6 +7,6 @@ fileTypes: ['morph']
 scopes:
     'program': 'source.morph'
 
-    '"function"': 'keyword.modifier'
-    '"=>"': 'storage.type.function.arrow'
-    '"hello"': 'storage.type'
+    'node > "abstract"': 'storage.type'
+    'node > "node"': 'storage.type'
+    'node > identifier': 'keyword.modifier'
