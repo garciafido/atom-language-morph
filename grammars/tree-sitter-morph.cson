@@ -64,6 +64,15 @@ scopes:
     'if_function > "if"': 'storage.type'
     'if_function > "=>"': 'storage.type'
 
+    'simple_string': 'string.quoted'
+    'template_string': 'string.quoted.template'
+    '
+    template_substitution > "${",
+    template_substitution > "}"
+    ': 'punctuation.section.embedded'
+    'template_substitution': 'embedded.source'
+
+
 
 
 
