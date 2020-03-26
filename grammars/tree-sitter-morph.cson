@@ -7,19 +7,19 @@ fileTypes: ['morph']
 scopes:
     'program': 'source.morph'
 
-    'import > "from"': 'support.storage.type'
+    'import > "from"': 'keyword.modifier'
     'import > "import"': 'support.storage.type'
     'import > identifier': 'storage.type'
 
     'node > "export"': 'storage.type'
     'node > "abstract"': 'storage.type'
-    'node > "node"': 'storage.type'
+    'node > "node"': 'support.storage.type'
     'node > identifier:nth-child(1)': 'keyword.modifier'
     'node > extends': 'keyword.modifier'
     'node > identifier:nth-child(2)': 'keyword.modifier'
 
     'tree > "export"': 'storage.type'
-    'tree > "tree"': 'storage.type'
+    'tree > "tree"': 'support.storage.type'
     'tree > identifier': 'storage.type'
 
     'decorator > decorator_identifier': 'storage.type'
@@ -30,40 +30,40 @@ scopes:
     'node_edge > "[]"': 'storage.type'
     'node_edge > "->"': 'storage.type'
 
-    'type > "type"': 'storage.type'
+    'type > "type"': 'support.storage.type'
     'type > identifier': 'storage.type'
     'type > "="': 'storage.type'
 
     'types > identifier': 'storage.type'
     'types > "|"': 'storage.type'
 
-    'function > "function"': 'storage.type'
+    'function > "function"': 'support.storage.type'
     'function > identifier:nth-child(1)': 'storage.type'
     'function > identifier:nth-child(2)': 'storage.type'
     'function > "=>"': 'storage.type.function.arrow'
     'function > ":"': 'storage.type'
 
-    'enum > "enum"': 'storage.type'
+    'enum > "enum"': 'support.storage.type'
     'enum > identifier:nth-child(1)': 'storage.type'
     'enum > identifier:nth-child(2)': 'storage.type'
     'enum > identifier:nth-child(3)': 'storage.type'
     'enum > ":"': 'storage.type'
 
-    'const > "const"': 'storage.type'
+    'const > "const"': 'support.storage.type'
     'node > "export"': 'storage.type'
     'const > identifier:nth-child(1)': 'storage.type'
     'const > identifier:nth-child(2)': 'storage.type'
     'const > ":"': 'storage.type'
     'const > "="': 'storage.type'
 
-    'morph > "morph"': 'storage.type'
+    'morph > "morph"': 'support.storage.type'
     'morph > identifier': 'storage.type'
 
     'morph_mutation > "new"': 'storage.type'
     'morph_mutation > identifier': 'storage.type'
     'morph_mutation > ":"': 'storage.type'
 
-    'if_function > "if"': 'storage.type'
+    'if_function > "if"': 'support.storage.type'
     'if_function > "=>"': 'storage.type.function.arrow'
 
     'comment': 'comment.block'
