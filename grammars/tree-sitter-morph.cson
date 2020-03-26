@@ -1,5 +1,5 @@
 name: 'Morph'
 scopeName: 'source.morph'
 type: 'tree-sitter'
-parser: 'tree-sitter-morph'
+parser: 'tree-sitter-haiku'
 fileTypes: ['morph']
