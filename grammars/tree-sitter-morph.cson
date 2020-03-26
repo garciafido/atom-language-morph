@@ -5,7 +5,6 @@ parser: 'tree-sitter-morph'
 fileTypes: ['morph']
 
 scopes:
-     'program': 'source.morph'
-
      '"function"': 'storage.type.function'
      '"=>"': 'storage.type.function.arrow'
+     '"hello"': 'keyword.control'
