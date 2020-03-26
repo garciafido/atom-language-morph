@@ -8,3 +8,33 @@ scopes:
      '"function"': 'storage.type.function'
      '"=>"': 'storage.type.function.arrow'
      'comment': 'comment.block'
+
+folds: [
+    {
+        type: 'comment'
+    }
+    {
+        start: {index: 0, type: '{'}
+        end: {index: -1, type: '}'}
+    }
+    {
+        start: {index: 0, type: '['}
+        end: {index: -1, type: ']'}
+    }
+    {
+        start: {index: 0, type: '('}
+        end: {index: -1, type: ')'}
+    }
+]
+
+comments: [
+    {
+        start: '/* '
+        end: ' */'
+    }
+
+    {
+        start: '// '
+    }
+]
+
