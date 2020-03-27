@@ -62,7 +62,7 @@ scopes:
     'node_edge > identifier': 'support.storage.type'
     'node_edge > "!"': 'keyword.control'
     'node_edge > "[]"': 'keyword.control'
-    'node_edge > "->"': 'entity.name.type.class'
+    'node_edge > "->"': 'storage.type.function'
 
     'type > "type"': 'storage.type.class'
     'type > identifier': 'support.type'
@@ -74,7 +74,7 @@ scopes:
     'function > "function"': 'storage.type.function'
     'function > identifier:nth-child(0)': 'support.type'
     'function > identifier:nth-child(1)': 'storage.type'
-    'function > "=>"': 'storage.type.function'
+    'function > "=>"': 'entity.name.type.class'
     'function > ":"': 'keyword.control'
 
     'enum > "enum"': 'storage.type.class'
@@ -98,7 +98,7 @@ scopes:
     'morph_mutation > ":"': 'keyword.control'
 
     'if_function > "if"': 'storage.type.function'
-    'if_function > "=>"': 'storage.type.function'
+    'if_function > "=>"': 'entity.name.type.class'
 
     'comment': 'comment.block'
 
