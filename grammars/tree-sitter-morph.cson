@@ -91,6 +91,7 @@ scopes:
     'morph_creation_declaration > "=>"': 'entity.name.type.class'
 
     'morph_mutation_declaration > identifier': 'storage.type'
+    'morph_mutation_declaration > "->"': 'storage.type.function'
 
     'comment': 'comment.block'
 
