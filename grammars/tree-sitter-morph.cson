@@ -42,8 +42,9 @@ folds: [
 scopes:
     'program': 'source.morph'
 
-    'import_statement > "from"': 'keyword.control'
-    'import_statement > "import"': 'keyword.control'
+    'import_from_statement > "from"': 'keyword.control'
+    'import_from_statement > "import"': 'keyword.control'
+    'import_module_statement > "import"': 'keyword.control'
     'import_statement > identifier': 'support.type'
 
     'node_declaration_statement > "export"': 'keyword.control'
