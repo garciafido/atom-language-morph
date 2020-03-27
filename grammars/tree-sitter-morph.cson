@@ -87,8 +87,11 @@ scopes:
     'morph_declaration_statement > "=>"': 'entity.name.type.class'
 
     'morph_creation_declaration > "new"': 'keyword.control'
-    'morph_creation_declaration > identifier': 'storage.type'
+    'morph_creation_declaration > identifier': 'support.type'
     'morph_creation_declaration > "->"': 'storage.type.function'
+
+    'graph_literal_property > "->"': 'storage.type.function'
+    'graph_literal_property > identifier': 'storage.type.function'
 
     'morph_mutation_declaration > identifier': 'storage.type'
     'morph_mutation_declaration > "->"': 'storage.type.function'
