@@ -43,8 +43,9 @@ scopes:
 
     'import_from_statement > "from"': 'keyword.control'
     'import_from_statement > "import"': 'keyword.control'
+    'import_from_statement > identifier': 'support.type'
     'import_module_statement > "import"': 'keyword.control'
-    'import_statement > identifier': 'support.type'
+    'import_module_statement > identifier': 'support.type'
 
     'export > "export"': 'keyword.control'
 
