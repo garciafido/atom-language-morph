@@ -59,8 +59,6 @@ scopes:
     'decorator > decorator_identifier': 'entity.name.function.decorator'
 
     'node_edge > identifier': 'support.storage.type'
-    'node_edge > "!"': 'keyword.control'
-    'node_edge > "[]"': 'keyword.control'
     'node_edge > "->"': 'storage.type.function'
 
     'type > "type"': 'storage.type.class'
@@ -72,20 +70,16 @@ scopes:
 
     'function > "function"': 'storage.type.function'
     'function > identifier': 'support.type'
-    'function > identifier:nth-child(1)': 'storage.type'
     'function > "=>"': 'entity.name.type.class'
     'function > ":"': 'keyword.control'
 
     'enum > "enum"': 'storage.type.class'
-    'enum > identifier:nth-child(0)': 'support.type'
-    'enum > identifier:nth-child(1)': 'storage.type'
-    'enum > identifier:nth-child(2)': 'storage.type'
+    'enum > identifier': 'support.type'
     'enum > ":"': 'keyword.control'
 
     'const > "const"': 'storage.modifier'
     'node > "export"': 'keyword.control'
-    'const > identifier:nth-child(0)': 'support.type'
-    'const > identifier:nth-child(1)': 'storage.type'
+    'const > identifier': 'support.type'
     'const > ":"': 'keyword.control'
     'const > "="': 'keyword.control'
 
