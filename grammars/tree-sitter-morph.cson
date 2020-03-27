@@ -51,13 +51,12 @@ scopes:
     'node > "node"': 'storage.type.class'
     'node > identifier': 'support.type'
     'node > extends': 'keyword.control'
-    'node > identifier:nth-child(1)': 'support.type'
 
     'tree > "export"': 'keyword.control'
     'tree > "tree"': 'storage.type.class'
     'tree > identifier': 'support.type'
 
-    'decorator > decorator_identifier': 'entity.name.type.class'
+    'decorator > decorator_identifier': 'entity.name.function.decorator'
 
     'node_edge > identifier': 'support.storage.type'
     'node_edge > "!"': 'keyword.control'
