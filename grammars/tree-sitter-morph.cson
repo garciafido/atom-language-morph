@@ -42,56 +42,51 @@ folds: [
 scopes:
     'program': 'source.morph'
 
-    'import > "from"': 'keyword.control'
-    'import > "import"': 'keyword.control'
-    'import > identifier': 'support.type'
+    'import_statement > "from"': 'keyword.control'
+    'import_statement > "import"': 'keyword.control'
+    'import_statement > identifier': 'support.type'
 
-    'node > "export"': 'keyword.control'
-    'node > "abstract"': 'keyword.control'
-    'node > "node"': 'storage.type.class'
-    'node > identifier': 'support.type'
-    'node > "extends"': 'keyword.control'
+    'node_declaration_statement > "export"': 'keyword.control'
+    'node_declaration_statement > "abstract"': 'keyword.control'
+    'node_declaration_statement > "node"': 'storage.type.class'
+    'node_declaration_statement > identifier': 'support.type'
+    'node_declaration_statement > "extends"': 'keyword.control'
 
-    'tree > "export"': 'keyword.control'
-    'tree > "tree"': 'storage.type.class'
-    'tree > identifier': 'support.type'
+    'tree_declaration_statement > "export"': 'keyword.control'
+    'tree_declaration_statement > "tree"': 'storage.type.class'
+    'tree_declaration_statement > identifier': 'support.type'
 
     'decorator > decorator_identifier': 'entity.name.function.decorator'
 
-    'node_edge > identifier': 'support.storage.type'
-    'node_edge > "->"': 'storage.type.function'
+    'node_edge_declaration > identifier': 'support.storage.type'
+    'node_edge_declaration > "->"': 'storage.type.function'
 
-    'type > "type"': 'storage.type.class'
-    'type > identifier': 'support.type'
-    'type > "="': 'keyword.control'
+    'type_declaration_statement > "type"': 'storage.type.class'
+    'type_declaration_statement > identifier': 'support.type'
+    'type_declaration_statement > "="': 'keyword.control'
 
-    'types > identifier': 'storage.type'
-    'types > "|"': 'keyword.control'
+    'type > "|"': 'keyword.control'
+    'single_type > identifier': 'storage.type'
 
-    'function > "function"': 'storage.type.function'
-    'function > identifier': 'support.type'
-    'function > "=>"': 'entity.name.type.class'
-    'function > ":"': 'keyword.control'
+    'function_declaration_statement > "func"': 'storage.type.function'
+    'function_declaration_statement > identifier': 'support.type'
+    'function_declaration_statement > "=>"': 'entity.name.type.class'
 
-    'enum > "enum"': 'storage.type.class'
-    'enum > identifier': 'support.type'
-    'enum > ":"': 'keyword.control'
+    'enum_declaration_statement > "enum"': 'storage.type.class'
+    'enum_declaration_statement > identifier': 'support.type'
 
-    'const > "const"': 'storage.modifier'
-    'node > "export"': 'keyword.control'
-    'const > identifier': 'support.type'
-    'const > ":"': 'keyword.control'
-    'const > "="': 'keyword.control'
+    'constant_declaration_statement > "const"': 'storage.modifier'
+    'constant_declaration_statement > "export"': 'keyword.control'
+    'constant_declaration_statement > identifier': 'support.type'
+    'constant_declaration_statement > "="': 'keyword.control'
 
-    'morph > "morph"': 'storage.type.function'
-    'morph > identifier': 'support.type'
+    'morph_declaration_statement > "morph"': 'storage.type.function'
+    'morph_declaration_statement > identifier': 'support.type'
 
-    'morph_mutation > "new"': 'keyword.control'
-    'morph_mutation > identifier': 'storage.type'
-    'morph_mutation > ":"': 'keyword.control'
+    'morph_creation_declaration > "new"': 'keyword.control'
+    'morph_creation_declaration > identifier': 'storage.type'
 
-    'if_function > "if"': 'storage.type.function'
-    'if_function > "=>"': 'entity.name.type.class'
+    'morph_mutation_declaration > identifier': 'storage.type'
 
     'comment': 'comment.block'
 
