@@ -50,7 +50,7 @@ scopes:
     'node > "abstract"': 'keyword.control'
     'node > "node"': 'storage.type.class'
     'node > identifier': 'support.type'
-    'node > extends': 'keyword.control'
+    'node > "extends"': 'keyword.control'
 
     'tree > "export"': 'keyword.control'
     'tree > "tree"': 'storage.type.class'
@@ -71,7 +71,7 @@ scopes:
     'types > "|"': 'keyword.control'
 
     'function > "function"': 'storage.type.function'
-    'function > identifier:nth-child(0)': 'support.type'
+    'function > identifier': 'support.type'
     'function > identifier:nth-child(1)': 'storage.type'
     'function > "=>"': 'entity.name.type.class'
     'function > ":"': 'keyword.control'
