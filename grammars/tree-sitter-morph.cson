@@ -49,9 +49,9 @@ scopes:
     'node > "export"': 'keyword.control'
     'node > "abstract"': 'keyword.control'
     'node > "node"': 'storage.type.class'
-    'node > identifier:nth-child(0)': 'support.type'
+    'node > identifier': 'support.type'
     'node > extends': 'keyword.control'
-    'node > identifier:nth-child(1)': 'keyword.modifier'
+    'node > identifier:nth-child(1)': 'support.type'
 
     'tree > "export"': 'keyword.control'
     'tree > "tree"': 'storage.type.class'
