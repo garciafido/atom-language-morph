@@ -4,7 +4,6 @@ type: 'tree-sitter'
 parser: 'tree-sitter-morph'
 fileTypes: ['morph']
 
-
 firstLineRegex: [
   # shebang line
   '^#![ \\t]*/.*\\bmorph[\\d\\.]*\\b'
@@ -15,7 +14,7 @@ firstLineRegex: [
 
 fileTypes: [
   'morph'
-  'mor'
+  'm'
 ]
 
 comments:
