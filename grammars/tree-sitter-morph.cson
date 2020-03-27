@@ -4,67 +4,101 @@ type: 'tree-sitter'
 parser: 'tree-sitter-morph'
 fileTypes: ['morph']
 
+
+firstLineRegex: [
+  # shebang line
+  '^#![ \\t]*/.*\\bmorph[\\d\\.]*\\b'
+
+  # vim modeline
+  'vim\\b.*\\bset\\b.*\\b(filetype|ft|syntax)=morph'
+]
+
+fileTypes: [
+  'morph'
+  'mor'
+]
+
+comments:
+  start: '// '
+
+folds: [
+  {
+    type: 'comment'
+  }
+  {
+    start: {type: '(', index: 0}
+    end: {type: ')', index: -1}
+  },
+  {
+    start: {type: '[', index: 0}
+    end: {type: ']', index: -1}
+  },
+  {
+    start: {type: '{', index: 0}
+    end: {type: '}', index: -1}
+  }
+]
+
 scopes:
     'program': 'source.morph'
 
     'import > "from"': 'keyword.modifier'
     'import > "import"': 'support.storage.type'
-    'import > identifier': 'storage.type'
+    'import > identifier': 'entity.name.type.class'
 
     'node > "export"': 'storage.type'
     'node > "abstract"': 'storage.type'
-    'node > "node"': 'support.storage.type'
-    'node > identifier:nth-child(1)': 'keyword.modifier'
+    'node > "node"': 'storage.type.class'
+    'node > identifier:nth-child(1)': 'entity.name.type.class'
     'node > extends': 'keyword.modifier'
     'node > identifier:nth-child(2)': 'keyword.modifier'
 
     'tree > "export"': 'storage.type'
     'tree > "tree"': 'support.storage.type'
-    'tree > identifier': 'storage.type'
+    'tree > identifier': 'entity.name.type.class'
 
-    'decorator > decorator_identifier': 'storage.type'
-    'decorator > decorator_identifier': 'storage.type'
+    'decorator > decorator_identifier': 'entity.name.type.class'
 
     'node_edge > identifier': 'storage.type'
     'node_edge > "!"': 'storage.type'
     'node_edge > "[]"': 'storage.type'
-    'node_edge > "->"': 'storage.type'
+    'node_edge > "->"': 'entity.name.type.class'
 
     'type > "type"': 'support.storage.type'
-    'type > identifier': 'storage.type'
+    'type > identifier': 'entity.name.type.class'
     'type > "="': 'storage.type'
 
     'types > identifier': 'storage.type'
     'types > "|"': 'storage.type'
 
-    'function > "function"': 'support.storage.type'
-    'function > identifier:nth-child(1)': 'storage.type'
+    'function > "function"': 'storage.type.function'
+    'function > identifier:nth-child(1)': 'entity.name.type.class'
     'function > identifier:nth-child(2)': 'storage.type'
-    'function > "=>"': 'storage.type.function.arrow'
+    'function > "=>"': 'storage.type.function'
     'function > ":"': 'storage.type'
 
     'enum > "enum"': 'support.storage.type'
-    'enum > identifier:nth-child(1)': 'storage.type'
+    'enum > identifier:nth-child(1)': 'entity.name.type.class'
     'enum > identifier:nth-child(2)': 'storage.type'
     'enum > identifier:nth-child(3)': 'storage.type'
     'enum > ":"': 'storage.type'
 
     'const > "const"': 'support.storage.type'
     'node > "export"': 'storage.type'
-    'const > identifier:nth-child(1)': 'storage.type'
+    'const > identifier:nth-child(1)': 'entity.name.type.class'
     'const > identifier:nth-child(2)': 'storage.type'
     'const > ":"': 'storage.type'
     'const > "="': 'storage.type'
 
-    'morph > "morph"': 'support.storage.type'
-    'morph > identifier': 'storage.type'
+    'morph > "morph"': 'storage.type.function'
+    'morph > identifier': 'entity.name.type.class'
 
     'morph_mutation > "new"': 'storage.type'
     'morph_mutation > identifier': 'storage.type'
     'morph_mutation > ":"': 'storage.type'
 
-    'if_function > "if"': 'support.storage.type'
-    'if_function > "=>"': 'storage.type.function.arrow'
+    'if_function > "if"': 'storage.type.function'
+    'if_function > "=>"': 'storage.type.function'
 
     'comment': 'comment.block'
 
