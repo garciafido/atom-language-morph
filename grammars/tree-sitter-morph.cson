@@ -43,15 +43,15 @@ scopes:
     'program': 'source.morph'
 
     'import > "from"': 'keyword.control'
-    'import > "import"': 'support.storage.type'
+    'import > "import"': 'keyword.control'
     'import > identifier': 'support.type'
 
     'node > "export"': 'keyword.control'
     'node > "abstract"': 'keyword.control'
     'node > "node"': 'storage.type.class'
-    'node > identifier:nth-child(1)': 'support.type'
+    'node > identifier:nth-child(0)': 'support.type'
     'node > extends': 'keyword.control'
-    'node > identifier:nth-child(2)': 'keyword.modifier'
+    'node > identifier:nth-child(1)': 'keyword.modifier'
 
     'tree > "export"': 'keyword.control'
     'tree > "tree"': 'storage.type.class'
@@ -72,21 +72,21 @@ scopes:
     'types > "|"': 'keyword.control'
 
     'function > "function"': 'storage.type.function'
-    'function > identifier:nth-child(1)': 'support.type'
-    'function > identifier:nth-child(2)': 'storage.type'
+    'function > identifier:nth-child(0)': 'support.type'
+    'function > identifier:nth-child(1)': 'storage.type'
     'function > "=>"': 'storage.type.function'
     'function > ":"': 'keyword.control'
 
     'enum > "enum"': 'storage.type.class'
-    'enum > identifier:nth-child(1)': 'support.type'
+    'enum > identifier:nth-child(0)': 'support.type'
+    'enum > identifier:nth-child(1)': 'storage.type'
     'enum > identifier:nth-child(2)': 'storage.type'
-    'enum > identifier:nth-child(3)': 'storage.type'
     'enum > ":"': 'keyword.control'
 
     'const > "const"': 'storage.modifier'
     'node > "export"': 'keyword.control'
-    'const > identifier:nth-child(1)': 'support.type'
-    'const > identifier:nth-child(2)': 'storage.type'
+    'const > identifier:nth-child(0)': 'support.type'
+    'const > identifier:nth-child(1)': 'storage.type'
     'const > ":"': 'keyword.control'
     'const > "="': 'keyword.control'
 
