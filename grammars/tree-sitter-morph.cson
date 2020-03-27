@@ -73,6 +73,8 @@ scopes:
     'function_declaration_statement > identifier': 'support.type'
     'function_declaration_statement > "=>"': 'entity.name.type.class'
 
+    'anonymous_function > "=>"': 'entity.name.type.class'
+
     'enum_declaration_statement > "enum"': 'storage.type.class'
     'enum_declaration_statement > identifier': 'support.type'
 
@@ -82,9 +84,11 @@ scopes:
 
     'morph_declaration_statement > "morph"': 'storage.type.function'
     'morph_declaration_statement > identifier': 'support.type'
+    'morph_declaration_statement > "=>"': 'entity.name.type.class'
 
     'morph_creation_declaration > "new"': 'keyword.control'
     'morph_creation_declaration > identifier': 'storage.type'
+    'morph_creation_declaration > "=>"': 'entity.name.type.class'
 
     'morph_mutation_declaration > identifier': 'storage.type'
 
