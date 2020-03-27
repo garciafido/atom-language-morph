@@ -44,18 +44,18 @@ scopes:
 
     'import > "from"': 'keyword.control'
     'import > "import"': 'support.storage.type'
-    'import > identifier': 'entity.name.type.class'
+    'import > identifier': 'support.type'
 
     'node > "export"': 'keyword.control'
     'node > "abstract"': 'keyword.control'
     'node > "node"': 'storage.type.class'
-    'node > identifier:nth-child(1)': 'support.storage.type'
+    'node > identifier:nth-child(1)': 'support.type'
     'node > extends': 'keyword.control'
     'node > identifier:nth-child(2)': 'keyword.modifier'
 
     'tree > "export"': 'keyword.control'
     'tree > "tree"': 'storage.type.class'
-    'tree > identifier': 'entity.name.type.class'
+    'tree > identifier': 'support.type'
 
     'decorator > decorator_identifier': 'entity.name.type.class'
 
@@ -65,33 +65,33 @@ scopes:
     'node_edge > "->"': 'entity.name.type.class'
 
     'type > "type"': 'storage.type.class'
-    'type > identifier': 'entity.name.type.class'
+    'type > identifier': 'support.type'
     'type > "="': 'keyword.control'
 
     'types > identifier': 'storage.type'
     'types > "|"': 'keyword.control'
 
     'function > "function"': 'storage.type.function'
-    'function > identifier:nth-child(1)': 'entity.name.type.class'
+    'function > identifier:nth-child(1)': 'support.type'
     'function > identifier:nth-child(2)': 'storage.type'
     'function > "=>"': 'storage.type.function'
     'function > ":"': 'keyword.control'
 
     'enum > "enum"': 'storage.type.class'
-    'enum > identifier:nth-child(1)': 'entity.name.type.class'
+    'enum > identifier:nth-child(1)': 'support.type'
     'enum > identifier:nth-child(2)': 'storage.type'
     'enum > identifier:nth-child(3)': 'storage.type'
     'enum > ":"': 'keyword.control'
 
     'const > "const"': 'storage.modifier'
     'node > "export"': 'keyword.control'
-    'const > identifier:nth-child(1)': 'entity.name.type.class'
+    'const > identifier:nth-child(1)': 'support.type'
     'const > identifier:nth-child(2)': 'storage.type'
     'const > ":"': 'keyword.control'
     'const > "="': 'keyword.control'
 
     'morph > "morph"': 'storage.type.function'
-    'morph > identifier': 'entity.name.type.class'
+    'morph > identifier': 'support.type'
 
     'morph_mutation > "new"': 'keyword.control'
     'morph_mutation > identifier': 'storage.type'
