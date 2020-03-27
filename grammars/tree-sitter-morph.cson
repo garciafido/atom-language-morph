@@ -67,7 +67,7 @@ scopes:
     'type_declaration_statement > "="': 'keyword.control'
 
     'type > "|"': 'keyword.control'
-    'single_type > identifier': 'storage.type'
+    'single_type > identifier': 'support.type'
 
     'function_declaration_statement > "func"': 'storage.type.function'
     'function_declaration_statement > identifier': 'support.type'
@@ -90,10 +90,14 @@ scopes:
     'morph_creation_declaration > identifier': 'support.type'
     'morph_creation_declaration > "->"': 'storage.type.function'
 
-    'graph_literal_property > "->"': 'storage.type.function'
-    'graph_literal_property > identifier': 'storage.type.function'
+    'graph_literal > identifier': 'support.type'
 
-    'morph_mutation_declaration > identifier': 'storage.type'
+    'graph_literal_alias > identifier': 'support.type'
+
+    'graph_literal_property > "->"': 'storage.type.function'
+    'graph_literal_property > identifier': 'support.type'
+
+    'morph_mutation_declaration > identifier': 'support.type'
     'morph_mutation_declaration > "->"': 'storage.type.function'
 
     'comment': 'comment.block'
