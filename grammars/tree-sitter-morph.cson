@@ -39,77 +39,50 @@ folds: [
 ]
 
 scopes:
-    'program': 'source.morph'
+    'Module': 'source.morph'
 
-    'import_from_statement > "from"': 'keyword.control'
-    'import_from_statement > "import"': 'keyword.control'
-    'import_from_statement > identifier': 'support.type'
-    'import_module_statement > "import"': 'keyword.control'
-    'import_module_statement > identifier': 'support.type'
+    '"private"': 'keyword.control'
+    '"public"': 'keyword.control'
+    'accessibility': 'keyword.control'
+    '"=>"': 'entity.name.type.class'
+    '"->"': 'storage.type.function'
 
-    'export > "export"': 'keyword.control'
+    'ImportFromDeclaration > "from"': 'keyword.control'
+    'ImportFromDeclaration > "import"': 'keyword.control'
+    'ImportFromDeclaration > path': 'support.type'
+    'ImportFromDeclaration > module > Identifier': 'support.type'
+    'ImportFromDeclaration > Identifier': 'support.type'
+    'ImportModuleDeclaration > "import"': 'keyword.control'
+    'ImportModuleDeclaration > path': 'support.type'
+    'ImportModuleDeclaration > "from"': 'keyword.control'
 
-    'node_declaration_statement > "abstract"': 'keyword.control'
-    'node_declaration_statement > "node"': 'storage.type.class'
-    'node_declaration_statement > identifier': 'support.type'
-    'node_declaration_statement > "extends"': 'keyword.control'
+    'NodeTypeDeclaration > "abstract"': 'keyword.control'
+    'NodeTypeDeclaration > "node"': 'storage.type.class'
+    'NodeTypeDeclaration > Identifier': 'support.type'
+    'NodeTypeDeclaration > extends': 'keyword.control'
 
-    'tree_declaration_statement > "tree"': 'storage.type.class'
-    'tree_declaration_statement > identifier': 'support.type'
+    'Decorator > DecoratorIdentifier': 'entity.name.function.decorator'
 
-    'decorator > decorator_identifier': 'entity.name.function.decorator'
+    'NodeEdgeDeclaration > Identifier': 'support.storage.type'
+    'NodeEdgeDeclaration > modifier': 'keyword.control'
+    'NodeEdgeDeclaration > type': 'keyword.control'
 
-    'node_edge_declaration > identifier': 'support.storage.type'
-    'node_edge_declaration > "->"': 'storage.type.function'
+    'MorphismDeclaration > "morph"': 'storage.type.function'
+    'MorphismDeclaration > "mutates"': 'storage.type.function'
+    'MorphismDeclaration > identifier': 'support.type'
 
-    'type_declaration_statement > "type"': 'storage.type.class'
-    'type_declaration_statement > identifier': 'support.type'
-    'type_declaration_statement > "="': 'keyword.control'
 
-    'type > "|"': 'keyword.control'
-    'single_type > identifier': 'support.type'
 
-    'function_declaration_statement > "func"': 'storage.type.function'
-    'function_declaration_statement > identifier': 'support.type'
-    'function_declaration_statement > "=>"': 'entity.name.type.class'
-
-    'anonymous_function > "=>"': 'entity.name.type.class'
-
-    'enum_declaration_statement > "enum"': 'storage.type.class'
-    'enum_declaration_statement > identifier': 'support.type'
-
-    'constant_declaration_statement > "const"': 'storage.modifier'
-    'constant_declaration_statement > identifier': 'support.type'
-    'constant_declaration_statement > "="': 'keyword.control'
-
-    'morph_declaration_statement > "morph"': 'storage.type.function'
-    'morph_declaration_statement > identifier': 'support.type'
-    'morph_declaration_statement > "=>"': 'entity.name.type.class'
-
-    'morph_creation_declaration > "new"': 'keyword.control'
-    'morph_creation_declaration > identifier': 'support.type'
-    'morph_creation_declaration > "->"': 'storage.type.function'
-
-    'graph_literal > identifier': 'support.type'
-
-    'graph_literal_alias > identifier': 'support.type'
-
-    'graph_literal_property > "->"': 'storage.type.function'
-    'graph_literal_property > identifier': 'support.type'
-
-    'morph_mutation_declaration > identifier': 'support.type'
-    'morph_mutation_declaration > "->"': 'storage.type.function'
+    'Literal': 'support.type'
 
     'comment': 'comment.block'
 
-    'simple_string': 'string.quoted'
-    'template_string': 'string.quoted.template'
-    'ebnf_literal': 'string.quoted.template'
+    'StringTemplateLiteral': 'string.quoted.template'
     '
-    template_substitution > "${",
-    template_substitution > "}"
+    TemplateSubstitution > "${",
+    TemplateSubstitution > "}"
     ': 'punctuation.section.embedded'
-    'template_substitution': 'embedded.source'
+    'TemplateSubstitution': 'embedded.source'
 
 
 
